@@ -1,0 +1,28 @@
+{
+  "name": "easy-aws",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "start:docker": "npm run build && docker-compose up"
+  },
+  "keywords": [],
+  "author": "Igor Duca",
+  "license": "MIT",
+  "description": "An easy tutorial about how to deploy APIs to EC2",
+  "repository": "https://github.com/igorfelipeduca/easy-aws",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "reflect-metadata": "^0.2.2",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.20",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2"
+  }
+}
